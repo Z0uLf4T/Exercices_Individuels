@@ -14,7 +14,7 @@ console.log(hello);
 document.body.innerHTML += `<h2>${hello}</h2>`;
 }
 
-//askName()
+
 
 /*Etape 2*/
 
@@ -49,11 +49,17 @@ document.body.innerHTML += `<h3>${userAge}</h3>`;
 return ageCalculation;
 }
 
+
+/*Etape 3*/
+
+/*appel des fonctions créées*/
+
 askName()
 askBirthYear()
 /*attention le console.log de la fonction va appeler de nouveau la fonction et donc relancer une fenêtre prompt*/
 
-/*préciser le calcul de l'âge à partir du mois de naissance*/
+
+/*Etape Bonus : Préciser le calcul de l'âge à partir du mois de naissance*/
 
 /*Ajustement de l'âge en fonction du mois de naissance*/
 
@@ -79,17 +85,13 @@ for (let index = 0; index < monthName.length; index++) {
 console.log(monthNumber)
 
     /*déterminer le mois actuel*/
-let currentMonthNumber = today.getMonth() + 1;
+let currentMonthNumber = today.getMonth();
 console.log(currentMonthNumber);
-
-    /*nom du mois actuel*/
-let month = today.toLocaleString('fr-FR', { month: 'long' });
-console.log(month); 
     
 /*comparaison du mois de naissance avec le mois actuel*/
 if (monthNumber<currentMonthNumber) {
-    console.log(askBirthYear());
+    console.log("Vous avez "+ askBirthYear() - 1 + "ans !");
 } else {
-    ;
+    console.log("Vous avez "+ askBirthYear() + "ans !");
 }
 
