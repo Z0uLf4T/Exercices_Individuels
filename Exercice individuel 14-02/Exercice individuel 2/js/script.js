@@ -14,10 +14,10 @@ function askNumber(){
 /*Création de la fonction didIWin*/
 
 function didIWin(givenNumber){
-if (givenNumber==22) {
+if (givenNumber==toBeGuessed) {
     alert("Bravo ! Vous avez deviné le nombre.");
     return true
-} else if (givenNumber<22) {
+} else if (givenNumber<toBeGuessed) {
         alert("Plus grand");
         return false
     } else {
@@ -34,6 +34,8 @@ if (givenNumber==22) {
 //Création de la fonction gamePlay qui rappelle les fonctions tant que le nombre n'est pas égal à 22
 
 function gamePlay(){
+    player1()
+    console.log(toBeGuessed)
     askNumber();
     console.log(givenNumber);
     //didIWin(givenNumber);  
@@ -64,8 +66,9 @@ function player1(){
     //console.log(toBeGuessed);
     while(atGuess()>50);
     //atGuess();
+    return toBeGuessed
 }
 
-player1()
+//player1()
 
 
