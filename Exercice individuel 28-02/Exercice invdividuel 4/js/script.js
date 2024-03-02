@@ -65,26 +65,26 @@ function translateLatinCharacter(letter) {
 
 
 // Etape 3 création d'une fonction encode qui traduit chaque lettre en morse
-
+let translated = '';
 function encode(text2encode){
-    console.log(text2encode)
+   // console.log(text2encode)
     getLatinCharacterList(text2encode);
-    console.log(latinList);
-    let translated = '';
+   // console.log(latinList);
+   // translated = '';
       for (let index = 0; index < latinList.length; index++) {
             const letter = latinList[index];
-            console.log(letter);
+            //console.log(letter);
             translateLatinCharacter(letter);
-            console.log(morse);
-            translated += morse + '  ';
+           // console.log(morse);
+            translated += morse + ' ';
         }
-    console.log(translated);
+   // console.log(translated);
     return translated;
 }
 
 // test de la fonction
-text2encode = "Hello, world"
-console.log(encode(text2encode));
+//text2encode = "bgeq"
+//console.log(encode(text2encode));
 
 
 // Etape 4 création d'une fonction decode qui traduit du morse en lettre
@@ -119,7 +119,6 @@ const morseToLatin = {
     '....': "H"
   }
 
-
 //déclaration de la variable text pour contenir le texte morse
 const morseText = '';
 
@@ -144,15 +143,15 @@ function translateMorseCharacter(morseCharacter){
 }
   
 //test de la fonction
-console.log(translateMorseCharacter("/"))
+//console.log(translateMorseCharacter("/"))
 
 // création de la fonction decode
-let text2decode 
-
+let text2decode = ''
+let encoded = '';
  function decode(text2decode){
     getMorseCharacterList(text2decode)
     console.log(morseList)
-    let encoded = '';
+    
     for (let index = 0; index < morseList.length; index++) {
         const morseCharacter = morseList[index];
         console.log(morseCharacter);
@@ -164,6 +163,26 @@ let text2decode
     return encoded
  }
 
-text2decode = "... --- ... / ... --- ..."
-console.log(decode(text2decode))
+//text2decode = "... --- ... / ... --- ..."
+//console.log(decode(text2decode))
 
+
+/*Etape 5*/
+
+function encoding(){
+    text2encode = document.getElementById("text2encode").value;
+    console.log(text2encode);
+    encode(text2encode)
+    //console.log(encode(text2encode))
+    console.log(translated)
+    document.getElementById("translated").innerHTML = translated;
+}
+
+
+function decoding(){
+    text2decode = document.getElementById("text2decode").value
+    console.log(text2decode)
+    decode(text2decode)
+    console.log(encoded)
+    document.getElementById("decoded").innerHTML = encoded
+}
