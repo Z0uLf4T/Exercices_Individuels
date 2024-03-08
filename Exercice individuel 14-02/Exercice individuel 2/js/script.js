@@ -2,7 +2,7 @@
 
 /*Fenêtre pour demander un nombre*/
 function askNumber(){
-    givenNumber = prompt("Entrez un nombre.");
+    givenNumber = parseInt(prompt("Entrez un nombre."));
     console.log(givenNumber);
     return givenNumber;
 }
@@ -52,7 +52,7 @@ gamePlay()
 /*fonction pour demander un nombre à deviner au player 1*/
 
 function atGuess(){
-    toBeGuessed = prompt("Entrez un nombre entre 0 et 50.");
+    toBeGuessed = parseInt(prompt("Entrez un nombre entre 0 et 50."));
     console.log (toBeGuessed);
     return toBeGuessed
 }
@@ -70,5 +70,7 @@ function player1(){
 }
 
 //player1()
+
+/*Etape 5*/
 
 

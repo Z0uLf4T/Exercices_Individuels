@@ -11,8 +11,8 @@ function getLatinCharacterList(text2encode) {
    return latinList
 }
 
-//test de la fonction
-//console.log(getLatinCharacterList("Hello, world"));
+/*test de la fonction
+console.log(getLatinCharacterList("Hello, world"));*/
 
 /*Etape 2 --> de la fonction translateLatinCharacter*/
 
@@ -60,8 +60,8 @@ function translateLatinCharacter(letter) {
     return morse
 }
 
-//test de la fonction
-//console.log(translateLatinCharacter('S'));
+/*test de la fonction
+console.log(translateLatinCharacter('S'));*/
 
 
 // Etape 3 création d'une fonction encode qui traduit chaque lettre en morse
@@ -82,9 +82,9 @@ function encode(text2encode){
     return translated;
 }
 
-// test de la fonction
-//text2encode = "bgeq"
-//console.log(encode(text2encode));
+/* test de la fonction
+text2encode = "bgeq"
+console.log(encode(text2encode));*/
 
 
 // Etape 4 création d'une fonction decode qui traduit du morse en lettre
@@ -128,8 +128,8 @@ function getMorseCharacterList(morseText){
     return morseList
 }
 
-//test de la fonction
-//console.log(getMorseCharacterList("... --- ... / ... --- ..."))
+/*test de la fonction
+console.log(getMorseCharacterList("... --- ... / ... --- ..."))*/
 
 //déclaration de la fonction translateMorseCharacter
 const morseCharacter = ""
@@ -142,8 +142,8 @@ function translateMorseCharacter(morseCharacter){
     return latinLetter
 }
   
-//test de la fonction
-//console.log(translateMorseCharacter("/"))
+/*test de la fonction
+console.log(translateMorseCharacter("/"))*/
 
 // création de la fonction decode
 let text2decode = ''
@@ -162,9 +162,9 @@ let encoded = '';
     console.log(encoded)
     return encoded
  }
-
-//text2decode = "... --- ... / ... --- ..."
-//console.log(decode(text2decode))
+/*test de la fonction
+text2decode = "... --- ... / ... --- ..."
+console.log(decode(text2decode))*/
 
 
 /*Etape 5*/
@@ -173,7 +173,6 @@ function encoding(){
     text2encode = document.getElementById("text2encode").value;
     console.log(text2encode);
     encode(text2encode)
-    //console.log(encode(text2encode))
     console.log(translated)
     document.getElementById("translated").innerHTML = translated;
 }
