@@ -55,7 +55,7 @@ function maxDaysInMonth(month, day) {
 
     return false
 }
-//console.log(maxDaysInMonth(4,31))
+console.log(maxDaysInMonth(4,31))
 
 
 /*Etape 2 création d'une fonction isPalindrome pour vérifier si la date est 
