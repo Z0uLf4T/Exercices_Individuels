@@ -5,14 +5,14 @@ let sum = 0;
 /* Etape 1 */
 
 /* avec une boucle for*/
-/*
+
 function sum1(array) {
     for (let index = 0; index < array.length; index++) {
        sum += array[index];  
     }
     return sum
 } 
-*/
+
 /*avec la méthode forEach*/
 /*
 function sum1(array) {
@@ -30,8 +30,8 @@ function sum1(array){
 }
 */
 
-/*sum1(integerNumbers)
-console.log(sum)*/
+sum1(integerNumbers)
+console.log(sum)
 
 /* Etape 2*/
 
@@ -45,7 +45,7 @@ console.log(sum)*/
 }
 */
 
-console.log(integerNumbers[index])
+//console.log(integerNumbers[index])
 
 /*sum2(integerNumbers)*/
 

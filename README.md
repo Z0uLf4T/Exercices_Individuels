@@ -1,3 +1,2 @@
 # Exercices_Individuels
-Je modifie le fichier pour tester le versionning avec GitHub
-nouvelle modif test
+J'ai créer sur repo pour héberger les exercices individuels proposés chaque semaine durant la formation à Ada Tech School.
